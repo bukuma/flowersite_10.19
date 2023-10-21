@@ -9,11 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../flower1/css/img1.css">
-    <script src="../js/script.js" defer></script>
+    <script src="../flower1/js/script.js" defer></script>
 
     
 </head>
 <body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <p>Loading...</p>
+        <div id="loading-screen"></div>
+    </div>
     <nav>
         <ul class="main-nav">
           <li><a href="../index.html" class="logo">HOME</a></li>
@@ -23,11 +28,21 @@
           <li><a href="#">Menu 4</a></li>
         </ul>
     </nav>
+
+    <style>
+        /* CSSスタイルの定義 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('../flower1/images/haikei.jpg');
+            background-size: cover; /* 背景画像をスクリーンに合わせる */
+            background-attachment: fixed; /* スクロールしても背景が固定される */
+            background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+        }
+    </style>
     
     <main>
-        <p>This is the about page of our website.</p>
-    
-    <img src="../flower1/images/haikei.jpg" alt="">
+   
     </main>
 </body>
 </html>
