@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img3</title>
+    <title>Flower2</title>
     <link rel="stylesheet" type="text/css" href="../flower2/css/style.css">
     <script src="../flower2/js/script.js" defer></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+  <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
+  <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-1/css/4-1-1.css" rel="stylesheet">
+
+
+
 </head>
 <body>
     <header>
-        <h1>About Our Website</h1>
+        <h1>Flower2</h1>
     </header>
+
+    <div id="splash">
+      <div id="splash_text"></div>
+    </div>
+
+    <style>
+      /* CSSスタイルの定義 */
+      body {
+          margin: 0;
+          padding: 0;
+          background-image: url('../flower2/images/haikei2.jpg');
+          background-size: cover; /* 背景画像をスクリーンに合わせる */
+          background-attachment: fixed; /* スクロールしても背景が固定される */
+          background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+      }
+
+      h1 {
+        color: rgb(85, 85, 255); /* テキストの色を青に設定 */
+        text-shadow: 2px 2px 0 white; /* テキストに白い縁取りを追加 */
+        margin: 40px;
+      }
+
+      .tooltip li {
+        position: relative; /* 相対位置指定 */
+        list-style: none;
+        margin: 10px 0;
+      }
+
+      .tooltip a {
+        text-decoration: none; /* リンクの下線を非表示に */
+        color: #2c00c9; /* リンクのテキスト色 */
+        transition: color 0.3s; /* 色の変化にトランジションを追加 */
+      }
+
+      .tooltip a:hover {
+        color: rgb(181, 181, 231); /* ホバー時のテキスト色を青に変更 */
+      }
+
+      .tooltip span {
+        display: none; /* ホバー時に表示されないようにする */
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8); /* ツールチップの背景色 */
+        color: white; /* ツールチップのテキスト色 */
+        border-radius: 4px;
+        padding: 5px;
+        left: 110%; /* リンクからの距離 */
+        top: 0;
+      }
+
+      .tooltip li:hover span {
+        display: block; /* ホバー時にツールチップを表示 */
+      }
+  </style>
+
     <main>
         <ul class="tooltip">
             <li>
@@ -23,11 +86,19 @@
             </li>
             <li>
               <a href="リンク先">Twitter</a>
-              <span>Twitterで毎日Webに関する情報をお届けしています。</span>
+              <span>最新情報はこちら。</span>
             </li>
-        </ul>
-        <img src="../flower2/images/haikei2.jpg" alt="">    
-       
+        </ul>  
     </main>
+
+    <!--==============JQuery読み込み===============-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <!--自作のJS-->
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-1/js/4-1-1.js"></script>
+
 </body>
 </html>
