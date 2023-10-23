@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img3</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<meta charset="utf-8">
+<title>5-2-4 MENUがCLOSEに</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="../flower4/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>About Our Website</h1>
-    </header>
-    <main>
-        <p>This is the about page of our website.</p>
-        
-        <!-- 戻るボタンの追加 -->
+    <div class="openbtn4" onclick="toggleMenu()"><span></span><span></span><span></span>
+    <nav>
+        <ul>   
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+    </div>
+    <p class="lead">5-2-4<br>MENUがCLOSEに</p>
+
+    <!-- ハンバーガーメニュー -->
+    <div id="openbtn4">
         <a href="../index.html">Back to Home</a>
-    </main>
+        <!-- 他のメニュー項目をここに追加できます -->
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="../flower4/js/script.js"></script>
 </body>
 </html>
