@@ -79,6 +79,9 @@
 body{
   background:#f3f3f3;
     padding:20px;
+    color: #f58e26;
+
+
 }
 
 
@@ -94,4 +97,39 @@ a{
 .btn-block{
   width:200px;  
   padding: 30px;
+}
+
+
+/*== グラデーション線から塗に変化する */
+
+.gradient4{
+  /*ボタンの形状*/
+  display: inline-block;
+  padding: 18px 60px;  
+  border-radius:30px;
+  text-decoration: none;
+  border:1px solid #fa6c9f;
+  color: #fa6c9f;
+  outline: none;
+  /*アニメーションの指定*/ 
+  transition: all 0.4s ease-out;
+}
+
+/*hoverした際、グラデーションと影を付ける*/
+.gradient4:hover{
+  /*ボタンの形状*/
+  border-color:transparent;
+  color: #fff;
+  /*背景の色と形状*/
+  background: linear-gradient(270deg, #fa6c9f 0%, #ffe140 50%, #ff357f 100%);
+  background-size: 200% auto;
+  background-position: right center;
+  /*ボックスの影*/   
+  box-shadow: 0 5px 10px rgb(250,108,159,0.4);
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+p{
+  margin: 0 0 10px 0;
 }
