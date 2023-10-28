@@ -2,19 +2,53 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img3</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="description" content="サンプルサイト">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../flower10/css/stlye.css">
 </head>
+
 <body>
-    <header>
-        <h1>About Our Website</h1>
-    </header>
+
+    <div class="wrapper">
+      <h1>Gallery</h1>
+      <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a></p>
+      
+      <ul class="gallery">
+        <li><img src="../images/img1.png" alt=""></li>
+        <li><img src="../images/img2.png" alt=""></li>
+        <li><img src="../images/img3.png" alt=""></li>
+        <li><img src="../images/img4.png" alt=""></li>
+        <li><img src="../images/img5.png" alt=""></li>
+        <li><img src="../images/img6.png" alt=""></li>
+        <li><img src="../images/img7.png" alt=""></li>
+        <li><img src="../images/img8.png" alt=""></li>
+      </ul>
+      <ul class="choice-btn">
+        <li><img src="../images/img1.png" alt=""></li>
+        <li><img src="../images/img2.png" alt=""></li>
+        <li><img src="../images/img3.png" alt=""></li>
+        <li><img src="../images/img4.png" alt=""></li>
+        <li><img src="../images/img5.png" alt=""></li>
+        <li><img src="../images/img6.png" alt=""></li>
+        <li><img src="../images/img7.png" alt=""></li>
+        <li><img src="../images/img8.png" alt=""></li>
+         </ul>
+    
+    <!--/wrapper--></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../flower10/js/script.js"></script></body>
+    
+    
     <main>
-        <p>This is the about page of our website.</p>
         
         <!-- 戻るボタンの追加 -->
         <a href="../index.html">Back to Home</a>
     </main>
-</body>
-</html>
+   
+    </html>
+
